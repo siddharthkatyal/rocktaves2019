@@ -1,4 +1,13 @@
-  @keyframes glitch1 {
+@keyframes fade-in{
+  0%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:1;
+  }
+}
+@keyframes glitch1 {
     0% {
       transform: none;
       opacity: 1;
@@ -185,6 +194,11 @@ body{
     text-align: right;
     width: 90vw;
  }
+
+
+ .header span, .header input{
+   display:none;
+ }
 .nav{
     display: inline-block;
     font-weight: 600;
@@ -218,7 +232,7 @@ body{
 h1{
     width:80vw;
     font-size: 140px;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     color: white;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 600;
@@ -250,7 +264,9 @@ h1:nth-child(2) {
 }
 .follow{
   position:relative; 
+  font-family: 'Roboto', sans-serif;
   font-size:35px;
+  font-weight: 600;
   margin: 0.5vw;
   color:grey;
   float: left;
@@ -456,9 +472,7 @@ h1:nth-child(2) {
  .details{
    margin-left: 10px;
    font-size: 30px;
- }
- .details{
-   margin-top:calc(24px + 5vh); 
+   margin-top:calc(23px + 5vh); 
  }
 @media only screen and (max-width: 950px) 
   {
@@ -483,22 +497,170 @@ h1:nth-child(2) {
         display: none;
     }
     .pg3{
-        width: 300vw;
+        width: 100vw;
     }
-    .round2{
-        position: relative;
-        top: 0;
-        left:100vw;
+    .round1head1{
+      position: relative;
+      font-size: 30px;
+      left: 0vw;
+  
+    }
+    .round1head2{
+      font-size:30px;
+      position: relative;
+      left: 0vw;
+      margin-top:0%;
+      
     }
     h1
     {
         font-size: 12vw;
+        margin:0 0 0 -10vw;
+        padding:0;
         
     }
 
     .tagline{
         content: "Tag Line";
     }
+
+    .follow{
+      display:none;
+    }
+
+    .fa{
+      margin-left:5vw;
+      margin-bottom:2vh;
+    }
+
+    .header{
+      padding-top: 5vw;
+      height:5.5vw;
+      padding-right: 2vw;
+      text-align: right;
+      width: 90vw;
+  
+      display: block;
+    position: relative;
     
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+   }
+  
+   .header input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+   }
+  
+  
+   .header span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative; 
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.35s ease;
+  }
+  
+  .header span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  .header span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  .header input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: darkgray;
+  }
+  
+  .header input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  .header input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  
+  #menu
+  {
+    position: absolute;
+    width: calc(100vw - 50px);
+    height:auto;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: black;
+    list-style-type: none;
+    display:none;
+    opacity:0;
+  }
+  
+  #menu li
+  {
+    padding: 10px 20px 10px 10px;
+    font-size: 22px;
+    display: block;
+    text-align:center;
+    text-decoration: none;
+  
+  }
+  
+  /*
+   * And let's slide it in from the left
+   */
+  .header input:checked ~ #menu
+  {
+    display:block;
+    animation: fade-in ease-in 0.3s;
+    opacity:1;
+  
+  }
+
+  .nav:hover{
+    border:none;
+    color:white;
+  }
+  
   }
 
