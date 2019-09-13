@@ -377,6 +377,7 @@ h1:nth-child(2) {
 .round2{
     display: flex;
     width: 100vw;
+    
     position: relative;
     left: 0;
     color:white;
@@ -385,7 +386,7 @@ h1:nth-child(2) {
 .round2head1{
     font-size: 30px;
     line-height: 30px;
-    margin-top:3%;
+    margin-top:5%;
     position: relative;
     right: 10vw; 
 }
@@ -393,7 +394,7 @@ h1:nth-child(2) {
     position: relative;
     right: 8vw;
     z-index: 5;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 3%;
     z-index: 100;
     font-size: 450px;
@@ -420,7 +421,6 @@ h1:nth-child(2) {
 }
 .contactushead{
     width: 100vw;
-    text-decoration: underline;
     padding-top: 4vh;
     padding-bottom: 4vh;
     text-align: center;
@@ -437,11 +437,13 @@ h1:nth-child(2) {
   align-content: center;
 }
 .image{
-  width: 50vw;
+  width:50vw;
   display: flex;
+  justify-content: flex-end;
 }
 .img {
   height: 100px;
+  margin-right: 10px;
   width: 100px;
   margin-top: 5vh;
   margin-bottom:5vh;
@@ -452,10 +454,11 @@ h1:nth-child(2) {
   background-repeat: no-repeat;
  }
  .details{
+   margin-left: 10px;
    font-size: 30px;
  }
  .details{
-   margin-top:calc(35px + 5vh); 
+   margin-top:calc(24px + 5vh); 
  }
 @media only screen and (max-width: 950px) 
   {
