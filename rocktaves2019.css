@@ -281,18 +281,19 @@ h1:nth-child(2) {
 }
 .aboutushead{
     width: 100vw;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 6vh;
+    padding-bottom: 2vh;
     text-align: center;
     font-size: 70px;
-    text-decoration: underline;
+    
 }
 .aboutuscont{
     width: 80vw;
+    line-height:35px;
     padding-top: 4vh; 
     text-align: center;
     padding-bottom: 6vh;
-    font-size: 30px;
+    font-size: 25px;
 }
 .pg3{
     background:white;
@@ -301,13 +302,12 @@ h1:nth-child(2) {
     display: flex;
     flex-flow: column;
 }
-.ruleshead{
+.roundshead{
     display: block;
     width: 100vw;
     height: 15vh;
     color:black;
-    text-decoration: underline;
-    padding-top: 2.5vw;
+    padding-top: 6vh;
     text-align: center;
     font-size: 70px;
 }
@@ -317,7 +317,7 @@ h1:nth-child(2) {
   margin-left:10vw;
   height: 15vh;
   color:black;
-  padding-top: 2.5vw;
+  padding-top: 0vh;
   text-align: center;
   font-size: 25px;
   border-bottom: solid black 2px;
@@ -327,32 +327,33 @@ h1:nth-child(2) {
   display: block;
   list-style-type: none;
 }
-.rule1{
+.round1{
      position: relative;
      display:flex;
      width: 100vw;
      height: auto;
      color:black;
 }
-.rule1head1{
+.round1head1{
     position: relative;
     font-size: 30px;
     left: 10vw;
-    margin-top: 3%;  
+    margin-top: 5%;  
     height:auto;
 }
-.rule1head2{
+.round1head2{
     position: relative;
     font-size: 450px;
     font-family: 'Helvetica Neue', sans-serif;
     left:4vw;
-    margin-top: 3%;  
+    margin-top: 5%;  
     line-height: 310px;    
     z-index:100;
     height:fit-content;
 }
-.rule1content{
+.round1content{
     width: 300vw;
+    line-height: 25px;
     margin-top: 3%;
     font-size: 20px;
     margin-right: 10vw;
@@ -373,7 +374,7 @@ h1:nth-child(2) {
     height:10vh;  
     background:black;  
 }
-.rule2{
+.round2{
     display: flex;
     width: 100vw;
     position: relative;
@@ -381,16 +382,16 @@ h1:nth-child(2) {
     color:white;
     background-color: black;
 }
-.rule2head1{
+.round2head1{
     font-size: 30px;
     line-height: 30px;
     margin-top:3%;
     position: relative;
     right: 10vw; 
 }
-.rule2head2{
+.round2head2{
     position: relative;
-    right: 4vw;
+    right: 8vw;
     z-index: 5;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -399,11 +400,11 @@ h1:nth-child(2) {
     line-height: 310px;
     font-family:  'Helvetica Neue', sans-serif;
 }
-.rule2content{
+.round2content{
     
     font-size: 25px;
     margin-top: 3%;
-    margin-right: 4vw;
+    margin-right: 8.5vw;
     text-align: right;
     margin-left:10vw;
     position:relative;
@@ -437,10 +438,10 @@ h1:nth-child(2) {
 }
 .image{
   width: 50vw;
+  display: flex;
 }
 .img {
   height: 100px;
-  
   width: 100px;
   margin-top: 5vh;
   margin-bottom:5vh;
@@ -481,7 +482,7 @@ h1:nth-child(2) {
     .pg3{
         width: 300vw;
     }
-    .rule2{
+    .round2{
         position: relative;
         top: 0;
         left:100vw;
