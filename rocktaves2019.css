@@ -486,42 +486,22 @@ h1:nth-child(2) {
   {
     .oasislogo{
       position: absolute;
-      left: calc(100% - 280px);
-      margin-right: 3vw;
+      left: calc(100% - 150px - 8vw);
       margin-top:3vh;
-      width: 200px;
+      width: 150px;
       height:auto;
   }
     .nav
     {
         display: none;
     }
-    .pg3{
-        width: 100vw;
-    }
-    .round1head1{
-      position: relative;
-      font-size: 30px;
-      left: 0vw;
-  
-    }
-    .round1head2{
-      font-size:30px;
-      position: relative;
-      left: 0vw;
-      margin-top:0%;
-      
-    }
+    
     h1
     {
-        font-size: 12vw;
+        font-size: 10vw;
         margin:0 0 0 -10vw;
         padding:0;
         
-    }
-
-    .tagline{
-        content: "Tag Line";
     }
 
     .follow{
@@ -635,7 +615,51 @@ h1:nth-child(2) {
     display:none;
     opacity:0;
   }
-  
+  .aboutushead{
+    font-size:50px;
+  }
+  .aboutuscont{
+    font-size:15px;
+  }
+  .contactushead{
+    font-size:50px;
+  }
+  .details{
+    font-size: 15px;
+    margin-top: calc(33px + 5vh)
+  }
+  .img{
+    width: 80px;
+    height:80px;
+  }
+  .roundshead{
+    font-size:50px;
+  }
+  .procedure{
+    font-size: 15px;
+  }
+  .round1head1{
+    font-size:15px;
+    margin-top:2vh;
+  }
+  .round1head2{
+    font-size: 200px;
+    margin-top:-10vh;
+  }
+  .round2head1{
+    margin-top:2vh;
+    font-size:15px;
+  }
+  .round2head2{
+    font-size: 200px;
+    margin-top:-10vh;
+  }
+  .round1content{
+    font-size:15px;
+  }
+  .round2content{
+    font-size:15px;
+  }
   #menu li
   {
     padding: 10px 20px 10px 10px;
