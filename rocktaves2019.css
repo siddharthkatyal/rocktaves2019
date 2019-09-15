@@ -178,7 +178,23 @@ body{
    font-family: 'Roboto', sans-serif;
     margin:0 0 0 0;
     overflow-x: hidden;
+    width:99vh;
+    
  }
+
+
+ *::-webkit-scrollbar {
+  width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+  background : darkgray;
+  border-radius: 10px;
+
+  }
+  *::-webkit-scrollbar-thumb { 
+  background : black;
+  border-radius: 10px;
+  }
 .oasislogo{
      position: absolute;
      left: 0px;
@@ -208,7 +224,7 @@ body{
     color: darkgray;
 }
 .nav:hover{
-    border-bottom: solid;
+    border-bottom: solid #67f3da;
     transition: all 0.2s ease-in-out;
     opacity: 1;
     color:white;
@@ -354,7 +370,7 @@ h1:nth-child(2) {
     position: relative;
     font-size: 30px;
     left: 10vw;
-    margin-top: 5%;  
+    margin-top:4%;  
     height:auto;
 }
 .round1head2{
@@ -378,7 +394,8 @@ h1:nth-child(2) {
     position:relative;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 55vh;
+    overflow-y: auto;
 }
 .blank1{
     position:relative;
@@ -451,6 +468,9 @@ h1:nth-child(2) {
   display: flex;
   width: 100vw;
   align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .image{
   width:50vw;
@@ -472,7 +492,8 @@ h1:nth-child(2) {
  .details{
    margin-left: 10px;
    font-size: 30px;
-   margin-top:calc(23px + 5vh); 
+   padding: 5vh; 
+   text-align: center;
  }
 @media only screen and (max-width: 950px) 
   {
@@ -538,8 +559,8 @@ h1:nth-child(2) {
     
     cursor: pointer;
     
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
+    opacity: 0;
+    z-index: 2;
     
     -webkit-touch-callout: none;
    }
@@ -575,10 +596,6 @@ h1:nth-child(2) {
     transform-origin: 0% 100%;
   }
   
-  /* 
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
   .header input:checked ~ span
   {
     opacity: 1;
@@ -592,9 +609,7 @@ h1:nth-child(2) {
     transform: rotate(0deg) scale(0.2, 0.2);
   }
   
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
+  
   .header input:checked ~ span:nth-last-child(2)
   {
     transform: rotate(-45deg) translate(0, -1px);
@@ -626,7 +641,6 @@ h1:nth-child(2) {
   }
   .details{
     font-size: 15px;
-    margin-top: calc(33px + 5vh)
   }
   .img{
     width: 80px;
@@ -640,11 +654,11 @@ h1:nth-child(2) {
   }
   .round1head1{
     font-size:15px;
-    margin-top:2vh;
+    left:13vw;
   }
   .round1head2{
     font-size: 200px;
-    margin-top:-10vh;
+    margin-top:-8vh;
   }
   .round2head1{
     margin-top:2vh;
@@ -670,9 +684,6 @@ h1:nth-child(2) {
   
   }
   
-  /*
-   * And let's slide it in from the left
-   */
   .header input:checked ~ #menu
   {
     display:block;
