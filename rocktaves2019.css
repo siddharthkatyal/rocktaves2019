@@ -178,7 +178,7 @@ body{
    font-family: 'Roboto', sans-serif;
     margin:0 0 0 0;
     overflow-x: hidden;
-    width:99vh;
+    width:100vw;
     
  }
 
@@ -258,9 +258,7 @@ h1{
     position:relative;
     animation: glitch1 2.5s infinite;
 }
-h1:first-child{
-  z-index: 111;
-}
+
 h1:nth-child(2) {
     color: #67f3da;
     animation: glitch2 2.5s infinite;
@@ -410,7 +408,6 @@ h1:nth-child(2) {
 .round2{
     display: flex;
     width: 100vw;
-    
     position: relative;
     left: 0;
     color:white;
@@ -421,11 +418,11 @@ h1:nth-child(2) {
     line-height: 30px;
     margin-top:5%;
     position: relative;
-    right: 10vw; 
+    right: 5vw; 
 }
 .round2head2{
     position: relative;
-    right: 8vw;
+    right: 4vw;
     z-index: 5;
     margin-top: 5%;
     margin-bottom: 3%;
@@ -495,7 +492,7 @@ h1:nth-child(2) {
    padding: 5vh; 
    text-align: center;
  }
-@media only screen and (max-width: 950px) 
+@media only screen and (max-width: 1000px) 
   {
     h1
     {
@@ -658,15 +655,17 @@ h1:nth-child(2) {
   }
   .round1head2{
     font-size: 200px;
-    margin-top:-8vh;
+    margin-top:-3vh;
   }
   .round2head1{
     margin-top:2vh;
     font-size:15px;
+    right:13vw;
   }
   .round2head2{
     font-size: 200px;
-    margin-top:-10vh;
+    margin-top:-4vh;
+    right:3vw;
   }
   .round1content{
     font-size:15px;
@@ -677,7 +676,8 @@ h1:nth-child(2) {
   #menu li
   {
     padding: 10px 20px 10px 10px;
-    font-size: 22px;
+    font-size: 40px;
+    line-height: 50px;
     display: block;
     text-align:center;
     text-decoration: none;
@@ -687,15 +687,16 @@ h1:nth-child(2) {
   .header input:checked ~ #menu
   {
     display:block;
+    height: 100vh;
     animation: fade-in ease-in 0.3s;
     opacity:1;
   
   }
-
   .nav:hover{
     border:none;
     color:white;
   }
+
   
   }
 
