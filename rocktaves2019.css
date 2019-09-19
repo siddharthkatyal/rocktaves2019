@@ -439,9 +439,9 @@ h1:nth-child(2) {
 }
 .pg4{
         display: flex;
-        background: white;
+        background: black;
         width: 100vw;
-        color: black;
+        color: white;
         flex-flow: wrap;
         justify-content: center;
 }
