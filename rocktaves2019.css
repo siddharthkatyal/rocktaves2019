@@ -339,7 +339,7 @@ h1:nth-child(2) {
 .procedure{
   display: block;
   width: 80vw;
-  margin-left:10vw;
+  margin-left:0vw;
   height: 15vh;
   color:black;
   padding-top: 0vh;
@@ -663,7 +663,21 @@ h1:nth-child(2) {
     border:none;
     color:white;
   }
-
-  
+}
+@media only screen and (max-width: 350px) 
+  {
+    h1
+    {
+        font-size: 8vw;    
+    }
+    .aboutushead{
+      font-size: 24px;
+    }
+    .contactushead{
+      font-size: 24px;
+    }
+    .roundshead{
+      font-size: 24px;
+    }
   }
 
