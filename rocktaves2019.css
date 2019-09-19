@@ -312,10 +312,12 @@ h1:nth-child(2) {
   align-content: center;
   justify-content: center;
   width: 100%;
-  padding-bottom: 4vh;
 }
 .video iframe{
+  border-radius: 30px;
   width:40vw;
+  height:22.5vw;
+  margin: 2vh 0 6vh 0;
 }
 .pg3{
     background:white;
