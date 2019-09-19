@@ -1,12 +1,4 @@
-@keyframes fade-in{
-  0%{
-    opacity:0;
-  }
 
-  100%{
-    opacity:1;
-  }
-}
 @keyframes glitch1 {
     0% {
       transform: none;
@@ -189,12 +181,12 @@ body{
      position: absolute;
      left: 0px;
      margin-left: 5vw;
-     margin-top:3vh;
+     margin-top:-1vh;
      width:200px;
      height:auto;
  }
 .header{
-    padding-top: 1vw;
+    padding-top: 0vw;
     height:5.5vw;
     padding-right: 2vw;
     text-align: right;
@@ -227,8 +219,6 @@ body{
     background-image:url("./a.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 150vh 100vh;
-    background-position: center;
     background-size: cover;
     background-position: center;    
     height: 100vh;
@@ -315,6 +305,19 @@ h1:nth-child(2) {
     text-align: center;
     padding-bottom: 6vh;
     font-size: 25px;
+}
+.video{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.video iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .pg3{
     background:white;
@@ -427,16 +430,16 @@ h1:nth-child(2) {
     font-size: 25px;
     margin-top: 3%;
     margin-right: 8.5vw;
-    text-align: right;
+    text-align: justify;
     margin-left:10vw;
     position:relative;
     align-items: center;
 }
 .pg4{
         display: flex;
-        background: black;
+        background: white;
         width: 100vw;
-        color: white;
+        color: black;
         flex-flow: wrap;
         justify-content: center;
 }
@@ -487,8 +490,7 @@ h1:nth-child(2) {
   {
     h1
     {
-        font-size: 12vw;
-        
+        font-size: 12vw;    
     }
   }
 @media only screen and (max-width: 800px) 
@@ -504,56 +506,41 @@ h1:nth-child(2) {
     {
         display: none;
     }
-    
     h1
     {
         font-size: 10vw;
         margin:0 0 0 -10vw;
-        padding:0;
-        
+        padding:0;   
     }
-
     .follow{
       display:none;
     }
-
     .fa{
       margin-left:5vw;
       margin-bottom:2vh;
     }
-
     .header{
-      padding-top: 5vw;
-      height:5.5vw;
-      padding-right: 2vw;
-      text-align: right;
-      width: 90vw;
-  
-      display: block;
+    padding-top: 5vw;
+    height:5.5vw;
+    padding-right: 2vw;
+    text-align: right;
+    width: 90vw;
+    display: block;
     position: relative;
-    
     z-index: 1;
-    
     -webkit-user-select: none;
     user-select: none;
    }
-  
    .header input{
     display: block;
     width: 40px;
     height: 32px;
     position: absolute;
-
-    
     cursor: pointer;
-    
     opacity: 0;
     z-index: 2;
-    
     -webkit-touch-callout: none;
    }
-  
-  
    .header span
   {
     display: block;
@@ -561,49 +548,37 @@ h1:nth-child(2) {
     height: 4px;
     margin-bottom: 5px;
     position: relative; 
-    
-    background: #cdcdcd;
+    background: white;
     border-radius: 3px;
-    
     z-index: 1;
-    
-    transform-origin: 4px 0px;
-    
+    transform-origin: 4px 0px;  
     transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.35s ease;
   }
-  
   .header span:first-child
   {
     transform-origin: 0% 0%;
   }
-  
   .header span:nth-last-child(2)
   {
     transform-origin: 0% 100%;
   }
-  
   .header input:checked ~ span
   {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: darkgray;
+    background: white;
   }
-  
   .header input:checked ~ span:nth-last-child(3)
   {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  
-  
   .header input:checked ~ span:nth-last-child(2)
   {
     transform: rotate(-45deg) translate(0, -1px);
   }
-  
-  
   #menu
   {
     position: absolute;
@@ -612,7 +587,6 @@ h1:nth-child(2) {
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    
     background: black;
     list-style-type: none;
     display:none;
@@ -647,6 +621,7 @@ h1:nth-child(2) {
   .round1head2{
     font-size: 200px;
     margin-top:-2vh;
+    left:-2vw;
   }
   .round2head1{
     margin-top:2vh;
@@ -656,7 +631,7 @@ h1:nth-child(2) {
   .round2head2{
     font-size: 200px;
     margin-top:-2vh;
-    right:3vw;
+    right:-2vw;
   }
   .round1content{
     font-size:15px;
@@ -678,10 +653,9 @@ h1:nth-child(2) {
   .header input:checked ~ #menu
   {
     display:block;
-    height: 100vh;
-    animation: fade-in ease-in 0.3s;
+    height: 85vh;
+    
     opacity:1;
-  
   }
   .nav:hover{
     border:none;

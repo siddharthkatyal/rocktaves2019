@@ -10,22 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./rocktaves2019.css">
 </head>
-<body></body>
+<body id="body">
         
         <div class="pg1">
                  <a href="https://bits-oasis.org"><img class="oasislogo"src="./logo_final.png"></a>
                  <div class="header">
-
-                        <input type="checkbox" />
-    
-                       
+                        <input type="checkbox" id="mycheck">
                         <span></span>
                         <span></span>
                         <span></span>
                   <ul id="menu">
-                      <a href="#pg2" style="text-decoration: none;"><li class="nav">About Us</li></a>
-                      <a href="#pg3" style="text-decoration: none;"><li class="nav">Procedure</li></a>
-                      <a href="#pg4" style="text-decoration: none;"><li class="nav">Contact Us</li></a>
+                      <a href="#pg2" style="text-decoration: none;"><li class="nav" onclick="uncheck()">About Us</li></a>
+                      <a href="#pg3" style="text-decoration: none;"><li class="nav" onclick="uncheck()">Procedure</li></a>
+                      <a href="#pg4" style="text-decoration: none;"><li class="nav" onclick="uncheck()">Contact Us</li></a>
                       <a href="" style="text-decoration: none;"><li class="nav">Register</li></a>
                     </ul>
                   </div>
@@ -44,6 +41,9 @@
     <div class="pg2" id="pg2">
         <div class="aboutushead"><span style="border-bottom: solid 2px white;">ABOUT US</span></div>
         <div class="aboutuscont">One of the oldest band competition in India which has acted as a springboard for India’s premiere rock groups of the stature of Parikrama, Indian Ocean, Superfuzz, PRESTORIKA, Them Clones and Euphoria who have taken part in the competition at different points in its history.</div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0AlBafi2NiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
     <div class="pg3" id="pg3">
             <div class="roundshead"><span style="border-bottom: solid 2px black;">PROCEDURE</span></div>
@@ -100,12 +100,33 @@
         </div>
         </div>
         <div class="pg4" id="pg4">
-                <div class="contactushead"><span style="border-bottom: solid 2px white;">CONTACT US</span></div>
+                <div class="contactushead"><span style="border-bottom: solid 2px black;">CONTACT US</span></div>
                 <div class="contact">
-                    <div class="details">NAME<br> CONTACT</div>
-
-                    <div class="details">NAME <br>CONTACT</div>
+                    <div class="details">Aarnav: <a href="tel:+918976417142" style="text-decoration: none">+918976417142</a></div>
                 </div>  
             </div>
+            <script>
+                
+                var check = document.getElementById("mycheck");
+               check.addEventListener("click",checked);
+                function checked()
+                {
+                    if(check.checked)
+                    {
+                        document.getElementById("body").style = "overflow-y:hidden";
+                        document.getElementById("menu").style = "display:block";
+                    }
+                    else
+                    {
+                        document.getElementById("body").style = "overflow-y:visible"; 
+                        document.getElementById("menu").style = "display:none";          
+                    }
+                }
+                function uncheck()
+                {
+                    check.checked=false;
+                    checked();
+                }
+            </script>
     </body>
     </html> 
