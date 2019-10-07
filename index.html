@@ -15,15 +15,15 @@
         <div class="pg1">
                  <a href="https://bits-oasis.org"><img class="oasislogo"src="./logo_final.png"></a>
                  <div class="header">
-                        <input type="checkbox" id="mycheck">
+                        <input type="checkbox" id="mycheck" >
                         <span></span>
                         <span></span>
                         <span></span>
                   <ul id="menu">
-                      <a href="#pg2" style="text-decoration: none;"><li class="nav" onclick="uncheck()">About Us</li></a>
-                      <a href="#pg3" style="text-decoration: none;"><li class="nav" onclick="uncheck()">Procedure</li></a>
-                      <a href="#pg4" style="text-decoration: none;"><li class="nav" onclick="uncheck()">Contact Us</li></a>
-                      <a href="https://bits-oasis.org/" target="_blank" style="text-decoration: none;"><li class="nav">Register</li></a>
+                      <a href="#pg2" style="text-decoration: none;" class="nav"><li class="links" onclick="uncheck()">About Us</li></a>
+                      <a href="#pg3" style="text-decoration: none;" class="nav"><li class="links"onclick="uncheck()">Procedure</li></a>
+                      <a href="#pg4" style="text-decoration: none;"class="nav"><li class="links" onclick="uncheck()">Contact Us</li></a>
+                      <a href="https://bits-oasis.org" target="_blank" style="text-decoration: none;" class="nav" ><li class="links" onclick="uncheck()">Register</li></a>
                     </ul>
                   </div>
         <div class="rocktaves" style="margin-top: -4vh;">
@@ -107,24 +107,23 @@
             </div>
             <script>
                 
-                var check = document.getElementById("mycheck");
+               var check = document.getElementById("mycheck");
                check.addEventListener("click",checked);
                 function checked()
                 {
                     if(check.checked)
                     {
-                        document.getElementById("body").style = "overflow-y:hidden";
-                        document.getElementById("menu").style = "display:block";
+                        document.getElementById("body").style = "overflow-y:hidden"; 
                     }
                     else
                     {
-                        document.getElementById("body").style = "overflow-y:visible"; 
-                        document.getElementById("menu").style = "display:none";          
+                        document.getElementById("body").style = "overflow-y:visible";
+                         
                     }
                 }
                 function uncheck()
                 {
-                    if(window.innerWidth < 800 )
+                    if(window.innerWidth < 800)
                     {
                     check.checked=false;
                     checked();
@@ -132,4 +131,4 @@
                 }
             </script>
     </body>
-    </html>
+    </html> 
