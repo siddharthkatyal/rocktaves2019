@@ -164,6 +164,7 @@
   }
   html {
     scroll-behavior: smooth;
+    overflow: -moz-scrollbars-none;
   } 
 body{
    font-family: 'Roboto', sans-serif;
@@ -177,12 +178,14 @@ body{
 
  ::-webkit-scrollbar {
   display: none;}
+
+
 .oasislogo{
      position: absolute;
      left: 0px;
      margin-left: 5vw;
      margin-top:-1vh;
-     width:200px;
+     width:250px;
      height:auto;
  }
 .header{
@@ -206,10 +209,10 @@ body{
     color: darkgray;
 }
 .nav:hover{
-    border-bottom: solid #67f3da;
-    transition: all 0.2s ease-in-out;
+    border-bottom: solid #44ABF7;
+    transition: all 0.1s ease-in-out;
     opacity: 1;
-    color:#44ABF7;
+    color:white;
     text-decoration: none;
 }
 .pg1{
@@ -236,16 +239,16 @@ h1{
   margin:0 0 0 3vw;
   line-height: 0;
   position:relative;
-  animation: glitch1 3s infinite;
+  animation: glitch1 4s infinite;
 }
 
 h1:nth-child(2) {
     color: #67f3da;
-    animation: glitch2 2s infinite;
+    animation: glitch2 3.5s infinite;
   }
   h1:nth-child(3) {
     color: #f16f6f;
-    animation: glitch3 2.5s infinite;
+    animation: glitch3 4.5s infinite;
   }
 .fa{
     position:relative; 
@@ -295,14 +298,13 @@ h1:nth-child(2) {
     padding-bottom: 2vh;
     text-align: center;
     font-size: 70px;
-    
 }
 .aboutuscont{
     width: 80vw;
     line-height:35px;
     padding-top: 4vh; 
     text-align: center;
-    padding-bottom: 2vh;
+    padding-bottom: 5vh;
     font-size: 25px;
 }
 .video{
@@ -313,7 +315,7 @@ h1:nth-child(2) {
   width: 100%;
 }
 .video iframe{
-  border-radius: 30px;
+  border-radius: 3vw;
   width:40vw;
   height:22.5vw;
   margin: 2vh 0 10vh 0;
@@ -502,11 +504,20 @@ h1:nth-child(2) {
   }
 @media only screen and (max-width: 800px) 
   {
+
+    .video iframe{
+      border-radius: 3vw;
+      width:60vw;
+      height:30vw;
+      margin: 2vh 0 10vh 0;
+
+    }
+
     .oasislogo{
       position: absolute;
-      left: calc(100% - 150px - 8vw);
+      left: calc(100% - 180px - 8vw);
       margin-top:vh;
-      width: 150px;
+      width: 180px;
       height:auto;
   }
     .nav
@@ -663,7 +674,6 @@ h1:nth-child(2) {
   {
     display:block;
     height: 85vh;
-    
     opacity:1;
   }
   .nav:hover{
