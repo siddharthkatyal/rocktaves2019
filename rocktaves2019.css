@@ -167,7 +167,7 @@
     overflow: -moz-scrollbars-none;
   } 
 body{
-   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin:0 0 0 0;
     padding:0;
     overflow-x: hidden;
@@ -261,7 +261,7 @@ h1:nth-child(2) {
 }
 .follow{
   position:relative; 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size:35px;
   font-weight: 600;
   margin: 0.5vw;
@@ -298,6 +298,7 @@ h1:nth-child(2) {
     padding-bottom: 2vh;
     text-align: center;
     font-size: 70px;
+    font-family: 'Bebas Neue';
 }
 .aboutuscont{
     width: 80vw;
@@ -335,6 +336,8 @@ h1:nth-child(2) {
     padding-top: 6vh;
     text-align: center;
     font-size: 70px;
+    
+    font-family: 'Bebas Neue';
 }
 .procedure{
   display: block;
@@ -458,6 +461,7 @@ h1:nth-child(2) {
     padding-bottom: 4vh;
     text-align: center;
     font-size: 70px;
+    font-family: 'Bebas Neue';
 }
 .contactuscont{
     padding-top: 4vh;
