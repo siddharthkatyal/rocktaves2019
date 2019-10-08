@@ -113,11 +113,13 @@
                 {
                     if(check.checked)
                     {
-                        document.getElementById("body").style = "overflow-y:hidden"; 
+                        document.getElementById("body").style = "overflow-y:hidden";
+                        document.getElementById("menu").style = "transition: transform 0.8s; transform: translateY(110vh);" ;
                     }
                     else
                     {
                         document.getElementById("body").style = "overflow-y:visible";
+                        document.getElementById("menu").style = " transition: transform 0.8s; transform: translateY(-110vh);";
                          
                     }
                 }
