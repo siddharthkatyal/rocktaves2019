@@ -12,7 +12,7 @@
       opacity: 1;
     }
     7% {
-      transform: skew(-0.5deg, -0.9deg);
+      /*transform: skew(-0.5deg, -0.9deg);*/
       opacity: 0.75;
     }
     10% {
@@ -24,7 +24,7 @@
       opacity: 1;
     }
     30% {
-      transform: skew(0.8deg, -0.1deg);
+     /* transform: skew(0.8deg, -0.1deg);*/
       opacity: 0.75;
     }
     35% {
@@ -36,7 +36,7 @@
       opacity: 1;
     }
     55% {
-      transform: skew(-1deg, 0.2deg);
+     /* transform: skew(-1deg, 0.2deg);*/
       opacity: 0.75;
     }
     50% {
@@ -48,7 +48,7 @@
       opacity: 1;
     }
     75% {
-      transform: skew(0.4deg, 1deg);
+     /* transform: skew(0.4deg, 1deg);*/
       opacity: 0.75;
     }
     80% {
@@ -188,7 +188,7 @@ body{
 .oasislogo{
      position: absolute;
      left: 0px;
-     margin-left: 5.5vw;
+     margin-left: 2vw;
      margin-top:-1vh;
      width:250px;
      height:auto;
@@ -225,11 +225,11 @@ body{
   left:50%;
   position: absolute;
   background: #fff;
-  transition: width 0.1s ease 0s, left 0.1s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 .nav:hover:after { 
-  width: calc(100% - 20px);  
+  width: 90%;  
   left:0;
 }
 .links:hover{
@@ -291,8 +291,7 @@ h1:nth-child(2) {
 .icons{ 
     position: absolute;
     display: block;
-    width: 100%;
-    left:0;
+    width: 100vw;
     bottom: 0px;
     padding-bottom: 1vw;  
 }
@@ -368,7 +367,7 @@ h1:nth-child(2) {
   padding-bottom: 5vh;
   text-align: center;
   font-size: 25px;
-  border-bottom: solid black 1px;
+  border-bottom: solid black 2px;
 }
 
 .procedurecont{
@@ -468,9 +467,9 @@ h1:nth-child(2) {
 }
 .pg4{
         display: flex;
-        background: white;
+        background: black;
         width: 100vw;
-        color: black;
+        color: white;
         flex-flow: wrap;
         justify-content: center;
 }
@@ -669,12 +668,6 @@ h1:nth-child(2) {
   .nav:hover{
     border:none;
     color:white;
-  }
-
-  .blank2{
-    height: 0;
-    margin: 0;
-    padding: 0;
   }
 }
 @media only screen and (max-width: 350px) 
