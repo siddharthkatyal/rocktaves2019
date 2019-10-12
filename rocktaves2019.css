@@ -302,7 +302,6 @@ h1:nth-child(2) {
     color:white;
     text-decoration: none;
 }
-
 .pg2{
     display: flex;
     background: black;
@@ -318,7 +317,7 @@ h1:nth-child(2) {
     padding-bottom: 2vh;
     text-align: center;
     font-size: 70px;
-    font-family:'Bebas Neue';
+    font-family: bebas-neue, sans-serif;
 }
 .aboutuscont{
     width: 80vw;
@@ -356,7 +355,7 @@ h1:nth-child(2) {
     padding-top: 6vh;
     text-align: center;
     font-size: 70px;
-    font-family: 'Bebas Neue';
+    font-family: bebas-neue, sans-serif;
 }
 .procedure{
   display: block;
@@ -480,7 +479,7 @@ h1:nth-child(2) {
   padding-bottom: 4vh;
   text-align: center;
   font-size: 70px;
-  font-family: 'Bebas Neue';
+  font-family: bebas-neue, sans-serif;
 }
 
 .contact{
